@@ -1,0 +1,39 @@
+Olá pessoal! Sábado também é dia de praticar e aperfeiçoar suas habilidades!
+
+O desafio de hoje é criar um programa Python para permitir a o cálculo do valor de pedágio em uma rodovia. Veja as especificações:
+
+Um sistema de pedágio está sendo criado para fazer a cobrança automática, ou seja, não haverá cabines, nem pessoas recebendo dinheiro. A ideia é que os veículos sejam fotografados e na foto seja possível identificar o tipo de veiculo e a quantidade de eixos.
+
+Portanto, no contexto do problema temos Veículo, VeículoPasseio, VeículoPesado, Motocicleta. A câmera é capaz de dizer o tipo de veículo e quantos eixos ele possui. Dessa forma seu program Python deverá ser capaz de instanciar objetos a partir da quantidade de eixos e do tipo.
+
+Exemplo: c = VeículoPasseio(2)
+
+No exemplo criamos um objeto da Classe VeículoPasseio e ele tem dois eixos.
+
+A ideia é que tenhamos no programa, além da classes, a função "calcular_valor_pedagio(veiculo)" que ao ser chamada precisa ter como parâmetro o objeto de interesse para o qual se quer conhecer o valor a pagar. Exemplo de chamada: calcular_valor_pedagio(c), onde "c" é um VeículoPasseio.
+
+Como o sistema de pedágio está na fase de protótipo ainda não temos as informações vindas das câmeras. Por isso você deve testar as funcionalidades instanciado os objetos que forem necessários para comprovar que é possível calcular o pedágio para cada tipo de veículo.
+
+Em cada classe deverá ser criado o método pedagio(), que calculará o valor a ser pago pelo veículo. Veja as regras de cálculo:
+
+
+
+
+VeículoPasseio = o valor do pedágio será  R$10,00 por eixo.
+
+VeículoPesado = o valor será de R$25,00 por eixo até o limite de 5 eixos. Acima disso, para os eixos adicionais, cada um deles custará R$35,00
+
+Motocicleta = o valor do pedágio será de exatamente R$5,00
+
+
+
+
+
+
+Instruções adicionais:
+
+    Crie todas as classes, com seus construtores, atributos e métodos
+    Crie pelo menos uma instância de cada classe filha.
+    Crie a função  calcular_valor_pedagio e faça uma chamada a essa função para cada objeto criado.
+    A saída da função será exibição do tipo de veículo e do valor a ser pago, no console.
+
